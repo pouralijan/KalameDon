@@ -1,0 +1,4 @@
+[FORMAT]
+
+max-line-lenght = 80
+indent-string = "  "
