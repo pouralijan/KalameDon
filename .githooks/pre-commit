@@ -48,6 +48,8 @@ def pylint_check():
   for current_file in files:
     file_type = magic.from_file(current_file)
     is_python_file = bool("Python" in file_type)
+    if 'migrations'  in current_file:
+        continue
     if current_file.endswith(".py") or is_python_file:
       result = _execute(["python", "-m", "pylint", "--reports=n", current_file])
       if result.status:
