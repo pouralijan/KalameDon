@@ -3,10 +3,16 @@
 *.log
 *.pot
 *.pyc
-__pycache__
+__pycache__/
 db.sqlite3
 media
+*.py[cod]
+
 
 # Virtual environment
 venv/
 
+
+# Django stuff:
+*.log
+local_settings.py
